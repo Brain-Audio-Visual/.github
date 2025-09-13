@@ -800,7 +800,7 @@
       <p style="font-size: 1rem; opacity: 0.9; position: relative; z-index: 1;">Free consultation & quote included • Licensed • Insured • Professional</p>
       
       <div class="form-container">
-        <form action="#" method="POST">
+        <form action="https://formspree.io/f/xqadjjjj" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="client-name">Your Name *</label>
@@ -999,28 +999,6 @@
           });
         }
       });
-    });
-
-    // Form submission handling
-    document.querySelector('form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const submitBtn = document.querySelector('.submit-btn');
-      const originalText = submitBtn.textContent;
-      
-      submitBtn.textContent = 'Sending Your Request...';
-      submitBtn.disabled = true;
-      
-      // Simulate form submission (replace with actual form handling)
-      setTimeout(() => {
-        submitBtn.innerHTML = '✅ Request Sent Successfully!';
-        setTimeout(() => {
-          alert('Thank you for choosing BrainAV.ca! Your event request has been submitted and Jason Brain will personally review your details. I\'ll contact you within 1 business day with a custom quote and availability confirmation. Get ready to party!');
-          this.reset();
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        }, 1000);
-      }, 2000);
     });
 
     // Smart form pre-filling based on selections
