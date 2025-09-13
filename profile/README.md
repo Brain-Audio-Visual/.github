@@ -1,6 +1,6 @@
 # BrainAV.ca - Professional DJ & Entertainment Services
 
-Welcome to the official GitHub repository for **BrainAV.ca**, the online home of Jason Brain's professional DJ and entertainment services. With over **25 years of experience**, Jason Brain delivers unforgettable events across **Central Ontario**, specializing in weddings, corporate events, and special occasions.
+Welcome to the official GitHub organization for **BrainAV.ca**, the online home of Jason Brain's professional DJ and entertainment services. With over **25 years of experience**, Jason Brain delivers unforgettable events across **Central Ontario**, specializing in weddings, corporate events, and special occasions.
 
 ## About BrainAV.ca
 
