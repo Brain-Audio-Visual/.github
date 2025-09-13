@@ -31,54 +31,10 @@ BrainAV.ca proudly serves **Central Ontario**, including:
 - **Haliburton**: Stunning highland and cottage venues.
 - **Surrounding Areas**: Flexible travel for your special occasion.
 
-## Website Features
-
-The BrainAV.ca website, hosted via **GitHub Pages**, is designed to showcase Jason Brain's services with a modern, responsive interface:
-- **Interactive Contact Form**: Powered by Formspree for easy event inquiries and free quotes.
-- **Smooth Navigation**: Seamless scrolling and intuitive design for a great user experience.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Professional Aesthetics**: Gradient styling, trust indicators, and a clean layout to reflect the brand’s quality.
-
-## Getting Started with the Repository
-
-This repository hosts the static website for BrainAV.ca, deployed on GitHub Pages. To set up or contribute:
-
-### Prerequisites
-- A GitHub account.
-- Basic knowledge of HTML, CSS, and JavaScript for modifications.
-- Git installed locally (optional for cloning).
-
-### Setup Instructions
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/brainav-ca.git
-   ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd brainav-ca
-   ```
-3. **Open `index.html`**: Modify the content or styles as needed using any text editor.
-4. **Deploy to GitHub Pages**:
-   - Ensure the repository is public or use GitHub Pages settings for private deployment.
-   - Push changes to the `main` branch:
-     ```bash
-     git add .
-     git commit -m "Update website content"
-     git push origin main
-     ```
-   - Enable GitHub Pages in the repository settings under **Settings > Pages**, selecting the `main` branch.
-5. **Access the Site**: Visit `https://your-username.github.io/brainav-ca` to view the live site.
-
-### Formspree Integration
-The contact form is powered by **Formspree** (`https://formspree.io/f/xqadjjjj`). To update the form endpoint:
-- Replace the `action` attribute in the `<form>` tag in `index.html` with your own Formspree endpoint.
-- Ensure all form fields (`name`, `email`, etc.) match your Formspree configuration.
-
 ## Contact Jason Brain
 
 Ready to book an unforgettable event? Reach out to Jason Brain for a free consultation and quote:
-- **Phone**: [(647) XXX-XXXX](tel:+1-647-XXX-XXXX)
-- **Email**: [jason@brainav.ca](mailto:jason@brainav.ca)
+- **Phone**: [(705) 701-9776](tel:+1-705-701-9776)
 - **Website**: [BrainAV.ca](https://brainav.ca)
 - **Response Time**: Within 1 business day
 
