@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainAV.ca | Jason Brain DJ & Entertainment Services | Wedding DJ Toronto, Durham, Kawartha Lakes</title>
+  <meta name="description" content="Jason Brain's professional DJ & entertainment services with 25+ years experience. Serving Toronto GTA, Durham, Kawartha Lakes, Peterborough & Haliburton. Wedding DJ, corporate events, special effects & more.">
+  <meta name="keywords" content="Jason Brain DJ, BrainAV, wedding DJ Toronto, corporate events, karaoke, photo booth, special effects, lighting, Central Ontario, GTA DJ services">
+  <meta name="author" content="BrainAV.ca - Jason Brain">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #0a0a1a, #1a1a2e); 
+      color: #333; 
+      overflow-x: hidden; 
+    }
+
+    /* Header */
+    header { 
+      position: relative; 
+      height: 100vh; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      text-align: center; 
+      color: white; 
+      background: linear-gradient(135deg, rgba(10, 10, 26, 0.9), rgba(26, 26, 46, 0.8));
+    }
+    
+    .header-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(10, 10, 26, 0.7) 0%, rgba(26, 26, 46, 0.8) 100%);
+      z-index: 1;
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .brain-badge {
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 35px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 2rem 1rem; 
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4); }
+      to { box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6); }
+    }
+    
+    header h1 { 
+      font-size: 4.5rem; 
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); 
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    
+    .main-subtitle { 
+      font-size: 2.2rem; 
+      margin: 1.5rem 0; 
+      color: #00d4ff;
+      font-weight: 600;
+    }
+    
+    .location-text { 
+      font-size: 1.4rem; 
+      margin: 1.5rem 0; 
+      opacity: 0.95;
+      font-weight: 500;
+      max-width: 800px;
+      line-height: 1.4;
+    }
+
+    /* Hero Stats */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+    
+    .stat-item {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .stat-number {
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: #00d4ff;
+      display: block;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    /* CTA Buttons */
+    .cta-container {
+      margin: 3rem 0;
+    }
+
+    .main-cta { 
+      padding: 1.5rem 3.5rem; 
+      font-size: 1.4rem; 
+      background: linear-gradient(135deg, #00d4ff, #0066ff); 
+      color: white; 
+      border: none; 
+      border-radius: 40px; 
+      cursor: pointer; 
+      position: relative; 
+      overflow: hidden; 
+      transition: all 0.3s ease; 
+      margin: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
+    }
+    
+    .main-cta:hover { 
+      transform: scale(1.08) translateY(-3px); 
+      box-shadow: 0 12px 35px rgba(0, 212, 255, 0.7); 
+    }
+
+    .secondary-cta {
+      padding: 1.2rem 2.8rem;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 2px solid rgba(0, 212, 255, 0.6);
+      border-radius: 35px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0.8rem;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+    }
+
+    .secondary-cta:hover {
+      background: rgba(0, 212, 255, 0.2);
+      border-color: #00d4ff;
+      transform: translateY(-3px);
+    }
+
+    .phone-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: white;
+      padding: 1.2rem 2.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 1.5rem 0.5rem;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    .phone-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Main Container */
+    .container { 
+      max-width: 1400px; 
+      margin: 2em auto 2rem; 
+      padding: 1rem; 
+      background: white; 
+      border-radius: 30px; 
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 3;
+    }
+
+    /* About Section */
+    .about-section {
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: white;
+      padding: 4rem;
+      border-radius: 25px;
+      margin: 3rem 0;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-content {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .founder-spotlight {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      margin: 3rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .founder-spotlight h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    /* Coverage Areas */
+    .coverage-section {
+      background: linear-gradient(135deg, #f8f9fa, #ffffff);
+      padding: 4rem;
+      border-radius: 25px;
+      margin: 4rem 0;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .coverage-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .area-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-top: 4px solid #00d4ff;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .area-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .area-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    .area-card h3 {
+      color: #0a0a1a;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .area-card p {
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* Section Styles */
+    section { 
+      margin: 5rem 0; 
+      text-align: center; 
+      padding: 2rem;
+    }
+    
+    h2 { 
+      font-size: 3.2rem; 
+      margin-bottom: 2.5rem; 
+      color: #0a0a1a; 
+      position: relative;
+      font-weight: 700;
+    }
+    
+    h2::after {
+      content: '';
+      display: block;
+      width: 150px;
+      height: 5px;
+      background: linear-gradient(to right, #00d4ff, #0066ff);
+      margin: 1.5rem auto;
+      border-radius: 3px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: white;
+      padding: 5rem 4rem;
+      border-radius: 30px;
+      margin: 4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form h2 {
+      color: white;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4rem;
+      border-radius: 25px;
+      backdrop-filter: blur(20px);
+      margin-top: 3rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 2rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.8rem;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 1.2rem;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: white;
+      outline: none;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      background: white;
+    }
+
+    .form-group textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: white;
+      color: #00d4ff;
+      padding: 1.5rem 4rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+      background: #f8f9fa;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(10, 10, 26, 0.95);
+      backdrop-filter: blur(20px);
+      padding: 1.2rem 0;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      color: #00d4ff;
+    }
+
+    .logo-icon {
+      margin-right: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #00d4ff;
+    }
+
+    .premium-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: rgb(255, 255, 255) !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Trust indicators */
+    .trust-indicators {
+      background: white;
+      padding: 3rem;
+      border-radius: 20px;
+      margin: 3rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: #0a0a1a;
+      font-weight: 600;
+    }
+
+    .trust-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer { 
+      background: #0a0a1a; 
+      color: white; 
+      text-align: center; 
+      padding: 4rem 2rem; 
+      margin-top: 4rem;
+      position: relative;
+    }
+    
+    footer a { 
+      color: #00d4ff; 
+      text-decoration: none; 
+    }
+    
+    footer a:hover { 
+      text-decoration: underline; 
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin: 3rem 0;
+      text-align: left;
+    }
+
+    .footer-section h4 {
+      color: #00d4ff;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    .footer-section p,
+    .footer-section li {
+      margin-bottom: 0.8rem;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li::before {
+      content: '🎵 ';
+      color: #00d4ff;
+      font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header { height: 800px; }
+      header h1 { font-size: 3rem; }
+      .main-subtitle { font-size: 1.8rem; }
+      .location-text { font-size: 1.2rem; }
+      
+      .container { 
+        padding: 2.5rem; 
+        margin: 2rem 1rem;
+      }
+      
+      h2 { font-size: 2.4rem; }
+      
+      .hero-stats {
+        gap: 2rem;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+      }
+
+      .coverage-areas {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .brain-badge {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+      }
+
+      .main-cta {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.2rem;
+      }
+
+      .secondary-cta {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+      }
+
+      .cta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#top" class="logo">
+        <span class="logo-icon">🎵</span>
+        Brain<span>AV</span><span class="premium-badge">25+ Years</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About Jason</a></li>
+        <li><a href="#coverage">Coverage</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="top">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <div class="brain-badge">🎵 Professional DJ & Entertainment Services</div>
+      <h1>BrainAV.ca</h1>
+      <p class="main-subtitle">Jason Brain - DJ & Entertainment</p>
+      <p class="location-text">Serving Toronto (GTA) • Durham • Kawartha Lakes • Peterborough • Haliburton & Central Ontario</p>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">1000+</span>
+          <span class="stat-label">Events</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">★★★★★</span>
+          <span class="stat-label">Five Stars</span>
+        </div>
+      </div>
+      
+      <div class="cta-container">
+        <button class="main-cta" onclick="scrollToContact()">
+          Book Your Event Today
+        </button>
+        <button class="secondary-cta" onclick="scrollToContact()">
+          Get Free Quote
+        </button>
+        <a href="tel:+1-647-XXX-XXXX" class="phone-cta">📞 Call (647) XXX-XXXX</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+      <h3 style="color: #0a0a1a; margin-bottom: 2rem; font-size: 1.8rem;">Why Choose BrainAV.ca</h3>
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="trust-icon">✓</div>
+          <span>Licensed & Insured</span>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-icon">🎵</div>
+          <span>Professional Equipment</span>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-icon">🏆</div>
+          <span>CDJA Member</span>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-icon">🛡️</div>
+          <span>Background Checks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>Jason Brain - 25+ Years of Professional Entertainment</h2>
+      <div class="about-content">
+        <p>Welcome back to BrainAV.ca! With hundreds of events and over 25 years of experience, I'm one of the most recognized wedding DJs in Central Ontario. I cater to the mood and taste of your event perfectly with my extensive variety, genre, and generations of music.</p>
+        
+        <p>I go well beyond just music! I offer Karaoke, Music Video Road Shows, Special Effects, and Lighting to literally bring your party to life. From the 40's to the Top 40's, I have your music covered.</p>
+      </div>
+      
+      <div class="founder-spotlight">
+        <h3>Jason Brain - Founder & Lead DJ</h3>
+        <p>After 25+ years of professional entertainment experience, I'm excited to relaunch BrainAV.ca as my primary business platform. My expertise in reading crowds and creating the perfect atmosphere makes every event unforgettable. Whether it's an intimate wedding ceremony or a packed dance floor, I bring the energy and professionalism that keeps clients coming back.</p>
+        
+        <p><strong>Professional Credentials:</strong> CDJA Member (Canadian Disc Jockey Association) • Licensed Music • Full Liability Insurance • Police Background Checks Available</p>
+      </div>
+      
+      <p style="font-size: 1.1rem; margin-top: 2rem; position: relative; z-index: 1;">
+        <strong>Reputation is everything!</strong> The vast majority of my clients are referred to me by previous customers, banquet halls, and guests that have attended one of my events. My reasonable prices, outstanding service, and enormous selection of music have made BrainAV one of the most widely respected and referred DJ services in Ontario.
+      </p>
+    </section>
+
+    <!-- Coverage Section -->
+    <section id="coverage" class="coverage-section">
+      <h2>Service Areas Across Central Ontario</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #555;">Professional DJ services with travel included to these key regions. I bring the party to you!</p>
+      
+      <div class="coverage-areas">
+        <div class="area-card">
+          <div class="area-icon">🏙️</div>
+          <h3>Toronto & GTA</h3>
+          <p>Complete Greater Toronto Area coverage including all surrounding municipalities. From downtown Toronto to suburban venues, I've got you covered with professional DJ services.</p>
+        </div>
+        
+        <div class="area-card">
+          <div class="area-icon">🌊</div>
+          <h3>Durham Region</h3>
+          <p>Serving Oshawa, Whitby, Ajax, Pickering, and all Durham Region communities with professional DJ and entertainment services tailored to your event.</p>
+        </div>
+        
+        <div class="area-card">
+          <div class="area-icon">🏞️</div>
+          <h3>Kawartha Lakes</h3>
+          <p>Beautiful cottage country and lakeside venues throughout the Kawartha Lakes region. Perfect for destination weddings and summer events with stunning natural backdrops.</p>
+        </div>
+        
+        <div class="area-card">
+          <div class="area-icon">🎓</div>
+          <h3>Peterborough</h3>
+          <p>City of Peterborough and surrounding areas. I specialize in university events, weddings, and corporate functions in this vibrant community.</p>
+        </div>
+        
+        <div class="area-card">
+          <div class="area-icon">🏕️</div>
+          <h3>Haliburton</h3>
+          <p>Stunning Highland venues and cottage properties. I bring professional entertainment to Ontario's most beautiful wilderness settings and retreat locations.</p>
+        </div>
+        
+        <div class="area-card">
+          <div class="area-icon">📍</div>
+          <h3>Surrounding Areas</h3>
+          <p>Extended coverage throughout Central Ontario. Contact me to discuss your specific location - I love to travel for great events and memorable celebrations!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-form">
+      <h2>Book Your Unforgettable Event</h2>
+      <p style="font-size: 1.3rem; margin-bottom: 1rem; position: relative; z-index: 1;">Ready to plan your unforgettable celebration? Fill out the form to discuss your vision, and I'll respond within one business day.</p>
+      <p style="font-size: 1rem; opacity: 0.9; position: relative; z-index: 1;">Free consultation & quote included • Licensed • Insured • Professional</p>
+      
+      <div class="form-container">
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name">Your Name *</label>
+              <input type="text" id="client-name" name="client-name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="partner-name">Partner's Name (if applicable)</label>
+              <input type="text" id="partner-name" name="partner-name">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="event-date">Event Date *</label>
+              <input type="date" id="event-date" name="event-date" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="event-type">Event Type *</label>
+              <select id="event-type" name="event-type" required>
+                <option value="">Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="school">School
