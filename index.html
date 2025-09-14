@@ -955,7 +955,7 @@
   </style>
 </head>
 <body>
- <!-- Navigation -->
+  <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
       <a href="#top" class="logo">
@@ -984,6 +984,7 @@
       <li><a href="tel:+1-705-213-3456" onclick="closeMobileNav()">📞 Call (705) 213-3456</a></li>
     </ul>
   </div>
+
   <!-- Header -->
   <header id="top">
     <div class="header-overlay"></div>
@@ -1294,6 +1295,37 @@
   </footer>
 
   <script>
+    // Mobile menu toggle
+    function toggleMobileNav() {
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      
+      hamburger.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    }
+
+    function closeMobileNav() {
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('active');
+    }
+
+    // Event listeners for mobile menu
+    document.getElementById('hamburger').addEventListener('click', toggleMobileNav);
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      
+      if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('active');
+      }
+    });
+
     // Smooth scrolling to contact section
     function scrollToContact() {
       document.getElementById('contact').scrollIntoView({
@@ -1317,11 +1349,14 @@
     });
 
     // Smart form pre-filling based on selections
+    let userHasCustomizedDetails = false;
+    
     document.getElementById('event-type').addEventListener('change', function() {
       const eventDetails = document.getElementById('event-details');
       const eventType = this.value;
       
-      if (!eventDetails.value && eventType) {
+      // Only auto-update if user hasn't manually customized the text
+      if (!userHasCustomizedDetails && eventType) {
         let defaultText = '';
         switch(eventType) {
           case 'wedding':
@@ -1346,6 +1381,15 @@
             defaultText = 'Please provide details about our event and how BrainAV.ca can make it amazing. ';
         }
         eventDetails.value = defaultText + 'Please let me know about availability and pricing for our Central Ontario event.';
+      }
+    });
+
+    // Track if user has manually edited the event details
+    document.getElementById('event-details').addEventListener('input', function() {
+      // If user types something different from the auto-generated text, mark as customized
+      const currentValue = this.value.trim();
+      if (currentValue && !currentValue.includes('Please let me know about availability and pricing for our Central Ontario event.')) {
+        userHasCustomizedDetails = true;
       }
     });
 
@@ -1434,12 +1478,3 @@
   </script>
 </body>
 </html>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
-
-  hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('active');
-    mobileNav.classList.toggle('active');
-  });
-</script>
