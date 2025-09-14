@@ -955,7 +955,7 @@
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+ <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
       <a href="#top" class="logo">
@@ -967,9 +967,23 @@
         <li><a href="#coverage">Coverage</a></li>
         <li><a href="#contact">Book Now</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
 
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">About Jason</a></li>
+      <li><a href="#coverage" onclick="closeMobileNav()">Coverage Areas</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Book Your Event</a></li>
+      <li><a href="tel:+1-705-213-3456" onclick="closeMobileNav()">📞 Call (705) 213-3456</a></li>
+    </ul>
+  </div>
   <!-- Header -->
   <header id="top">
     <div class="header-overlay"></div>
