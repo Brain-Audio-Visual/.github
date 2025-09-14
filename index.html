@@ -622,6 +622,58 @@
       font-size: 1.2rem;
     }
 
+    /* Scroll to Top Button */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      left: 30px; /* Change to 'right: 30px;' to move to right side */
+      width: 55px;
+      height: 55px;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .scroll-to-top:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6);
+      background: linear-gradient(135deg, #0099cc, #004499);
+    }
+
+    .scroll-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-to-top:active {
+      transform: scale(0.95) translateY(-3px);
+    }
+
+    /* Mobile adjustments for scroll button */
+    @media (max-width: 768px) {
+      .scroll-to-top {
+        bottom: 20px;
+        left: 20px; /* Change to 'right: 20px;' to move to right side */
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+      }
+    }
+
     /* Footer */
     footer { 
       background: #0a0a1a; 
@@ -1294,6 +1346,11 @@
     </div>
   </footer>
 
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTopSmooth()" title="Back to Top">
+    ↑
+  </button>
+
   <script>
     // Mobile menu toggle
     function toggleMobileNav() {
@@ -1405,20 +1462,38 @@
       }
     });
 
-    // Advanced navbar behavior
+    // Enhanced navbar behavior with scroll to top button
     let lastScrollTop = 0;
+    const scrollToTopBtn = document.getElementById('scrollToTop');
     
     window.addEventListener('scroll', function() {
       const navbar = document.getElementById('navbar');
       let st = window.pageYOffset || document.documentElement.scrollTop;
       
+      // Navbar hide/show logic
       if (st > lastScrollTop && st > 150) {
         navbar.style.transform = 'translateY(-100%)';
       } else {
         navbar.style.transform = 'translateY(0)';
       }
+      
+      // Show/hide scroll to top button
+      if (st > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+      
       lastScrollTop = st <= 0 ? 0 : st;
     });
+
+    // Scroll to top function
+    function scrollToTopSmooth() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
 
     // Form validation enhancements
     const requiredFields = document.querySelectorAll('[required]');
