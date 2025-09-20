@@ -13,6 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brain Audio Visual - BrainAV.ca | Jason Brain DJ & Entertainment Services | Wedding DJ Haliburton, Kawartha Lakes, Toronto</title>
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 <meta name="description" content="Jason Brain's professional DJ & entertainment services with 25+ years experience. Serving Haliburton, Kawartha Lakes, Toronto GTA, Durham, & Peterborough. Wedding DJ, corporate events, special effects & more.">
 <meta name="keywords" content="Jason Brain DJ, BrainAV, wedding DJ Haliburton, wedding DJ Kawartha Lakes, wedding DJ Toronto, corporate events, karaoke, photo booth, special effects, lighting, Central Ontario, GTA DJ services">
 <meta name="author" content="BrainAV.ca - Jason Brain">
@@ -1006,6 +1007,14 @@
         padding: 1.5rem 0.8rem;
       }
     }
+    /* CSS */
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
   </style>
 </head>
 <body>
@@ -1272,7 +1281,8 @@
             <label for="event-details">Event Details & Special Requests *</label>
             <textarea id="event-details" name="event-details" required placeholder="Tell me about your event vision, timeline preferences, special requests, cultural considerations, must-play songs, or anything else that will help me make your event perfect..."></textarea>
           </div>
-          
+
+          <div class="g-recaptcha" data-sitekey="6Lf_Rs4rAAAAAEuvP7GykkQySpiQjMOcQ7GhiSba"></div> <!-- replace with your recaptcha SITE key not secret key -->
           <button type="submit" class="submit-btn">Get Your Free Quote</button>
         </form>
       </div>
@@ -1552,6 +1562,13 @@
         copyrightText.textContent = copyrightText.textContent.replace('2025', currentYear);
       }
     });
+    // javascript
+window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
   </script>
 </body>
 </html>
