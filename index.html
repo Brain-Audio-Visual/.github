@@ -621,10 +621,49 @@
       color: var(--accent-cyan);
     }
 
+    .footer-section .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .footer-section .social-links a {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+    }
+
+    .footer-section .social-links a:hover {
+      color: var(--accent-cyan);
+      border-color: var(--accent-cyan);
+      transform: translateY(-3px);
+    }
+
     .footer-bottom {
       text-align: center;
       padding-top: 2rem;
       border-top: 1px solid rgba(0, 212, 255, 0.3);
+    }
+    
+    .footer-bottom a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin: 0 0.5rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent-cyan);
+      text-decoration: underline;
     }
 
     /* Scroll to Top */
@@ -676,7 +715,8 @@
       
       .services-overview,
       .tech-stack,
-      .coverage-grid {
+      .coverage-grid,
+      .footer-grid {
         grid-template-columns: 1fr;
       }
       
@@ -701,10 +741,10 @@
         🎵 Brain<span>AV</span>
       </a>
       <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#dj">DJ Services</a></li>
         <li><a href="#web-dev">Web Dev</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -723,80 +763,6 @@
       <p class="tagline">Where Creativity Meets Technology</p>
       <p class="subtitle">Professional DJ Services • Web Development • Video Production • Music Production • Creative Services</p>
       
-      <div class="services-overview">
-        <div class="service-card">
-          <div class="service-icon">🎧</div>
-          <h3>DJ & Events</h3>
-          <p>25+ years professional entertainment</p>
-          <ul>
-            <li>Weddings & Corporate Events</li>
-            <li>Serato DJ Pro</li>
-            <li>Video DJ Services</li>
-            <li>Special Effects & Lighting</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Web Development</h3>
-          <p>AI-powered modern solutions</p>
-          <ul>
-            <li>Custom Websites & Apps</li>
-            <li>E-commerce Solutions</li>
-            <li>SEO Optimization</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">🎬</div>
-          <h3>Video Production</h3>
-          <p>Professional live & post production</p>
-          <ul>
-            <li>4K Drone Cinematography</li>
-            <li>Live Streaming (ATEM Mini)</li>
-            <li>Video Editing</li>
-            <li>Event Coverage</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">🎵</div>
-          <h3>Music Production</h3>
-          <p>Studio-quality creation</p>
-          <ul>
-            <li>Ableton Live</li>
-            <li>Resolume Arena</li>
-            <li>Sound Design</li>
-            <li>Audio Mixing</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Graphic Design</h3>
-          <p>Visual identity & branding</p>
-          <ul>
-            <li>Logo & Brand Design</li>
-            <li>Marketing Materials</li>
-            <li>Event Graphics</li>
-            <li>Digital Assets</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">📺</div>
-          <h3>Visual Production</h3>
-          <p>Multi-camera & aerial cinematography</p>
-          <ul>
-            <li>4K Drone Aerial Shots</li>
-            <li>1080p Multi-Camera Systems</li>
-            <li>Video DJ (Resolume)</li>
-            <li>Live Visual Effects</li>
-          </ul>
-        </div>
-      </div>
-      
       <div class="cta-container">
         <a href="#contact" class="btn-primary">Start Your Project</a>
         <a href="#services" class="btn-secondary">Explore Services</a>
@@ -806,6 +772,114 @@
   </header>
 
   <div class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Jason Brain</h2>
+      <div class="about-content">
+        <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+          Welcome to Brain Audio Visual—where 25+ years of professional entertainment experience meets modern technology and creative innovation. Based in beautiful Haliburton, Ontario, I've evolved from being one of Central Ontario's most recognized wedding DJs to offering comprehensive creative professional services.
+        </p>
+        
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+          My journey started with hundreds of events across Lindsay, Durham Region, and beyond. That foundation of reading crowds, understanding what people need, and delivering unforgettable experiences now extends to web development, video production, music creation, and complete creative solutions.
+        </p>
+        
+        <div class="credentials">
+          <div class="credential-badge">📚 Computer Programmer Education</div>
+          <div class="credential-badge">🎵 25+ Years DJ Experience</div>
+          <div class="credential-badge">📺 Live TV Production</div>
+          <div class="credential-badge">🏒 OHL Sports Broadcasting</div>
+          <div class="credential-badge">🎓 CDJA Member</div>
+          <div class="credential-badge">🛡️ Licensed & Insured</div>
+        </div>
+        
+        <p style="font-size: 1.2rem; margin-top: 2rem;">
+          <strong>The Brain AV Difference:</strong> I don't just offer services—I bring decades of understanding what makes experiences memorable. Whether it's keeping a dance floor packed, building a website that converts visitors to customers, or producing video content that tells your story, I combine technical expertise with creative intuition that only comes from years of live performance experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services">
+        <h2>Creative Services</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-top: -1rem; margin-bottom: 3rem; color: #555;">
+            A unique blend of technical expertise and creative talent to bring your vision to life.
+        </p>
+        <div class="services-overview" style="margin: 0 auto; color: var(--text-dark);">
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">🎧</div>
+                <h3 style="color: var(--text-dark);">DJ & Events</h3>
+                <p style="color: #555;">25+ years professional entertainment</p>
+                <ul style="color: #555;">
+                    <li>Weddings & Corporate Events</li>
+                    <li>Serato DJ Pro</li>
+                    <li>Video DJ Services</li>
+                    <li>Special Effects & Lighting</li>
+                </ul>
+            </div>
+            
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">💻</div>
+                <h3 style="color: var(--text-dark);">Web Development</h3>
+                <p style="color: #555;">AI-powered modern solutions</p>
+                <ul style="color: #555;">
+                    <li>Custom Websites & Apps</li>
+                    <li>E-commerce Solutions</li>
+                    <li>SEO Optimization</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">🎬</div>
+                <h3 style="color: var(--text-dark);">Video Production</h3>
+                <p style="color: #555;">Professional live & post production</p>
+                <ul style="color: #555;">
+                    <li>4K Drone Cinematography</li>
+                    <li>Live Streaming (ATEM Mini)</li>
+                    <li>Video Editing</li>
+                    <li>Event Coverage</li>
+                </ul>
+            </div>
+            
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">🎵</div>
+                <h3 style="color: var(--text-dark);">Music Production</h3>
+                <p style="color: #555;">Studio-quality creation</p>
+                <ul style="color: #555;">
+                    <li>Ableton Live</li>
+                    <li>Resolume Arena</li>
+                    <li>Sound Design</li>
+                    <li>Audio Mixing</li>
+                </ul>
+            </div>
+            
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">🎨</div>
+                <h3 style="color: var(--text-dark);">Graphic Design</h3>
+                <p style="color: #555;">Visual identity & branding</p>
+                <ul style="color: #555;">
+                    <li>Logo & Brand Design</li>
+                    <li>Marketing Materials</li>
+                    <li>Event Graphics</li>
+                    <li>Digital Assets</li>
+                </ul>
+            </div>
+            
+            <div class="service-card" style="background: #f8f9fa; border-color: rgba(0,0,0,0.1);">
+                <div class="service-icon">📺</div>
+                <h3 style="color: var(--text-dark);">Visual Production</h3>
+                <p style="color: #555;">Multi-camera & aerial cinematography</p>
+                <ul style="color: #555;">
+                    <li>4K Drone Aerial Shots</li>
+                    <li>1080p Multi-Camera Systems</li>
+                    <li>Video DJ (Resolume)</li>
+                    <li>Live Visual Effects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- DJ Services Section -->
     <section id="dj" class="service-detail featured">
       <h2>Professional DJ & Entertainment Services</h2>
@@ -1059,30 +1133,49 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <h2>About Jason Brain</h2>
-      <div class="about-content">
-        <p style="font-size: 1.3rem; margin-bottom: 2rem;">
-          Welcome to Brain Audio Visual—where 25+ years of professional entertainment experience meets modern technology and creative innovation. Based in beautiful Haliburton, Ontario, I've evolved from being one of Central Ontario's most recognized wedding DJs to offering comprehensive creative professional services.
-        </p>
-        
-        <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-          My journey started with hundreds of events across Lindsay, Durham Region, and beyond. That foundation of reading crowds, understanding what people need, and delivering unforgettable experiences now extends to web development, video production, music creation, and complete creative solutions.
-        </p>
-        
-        <div class="credentials">
-          <div class="credential-badge">📚 Computer Programmer Education</div>
-          <div class="credential-badge">🎵 25+ Years DJ Experience</div>
-          <div class="credential-badge">📺 Live TV Production</div>
-          <div class="credential-badge">🏒 OHL Sports Broadcasting</div>
-          <div class="credential-badge">🎓 CDJA Member</div>
-          <div class="credential-badge">🛡️ Licensed & Insured</div>
+    <!-- Technology Stack -->
+    <section id="tech">
+      <h2>Technology & Tools</h2>
+      <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #555;">
+        Professional-grade equipment and software for every service
+      </p>
+      
+      <div class="tech-stack">
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎧</div>
+          <h4>DJ Equipment</h4>
+          <p>Serato DJ Pro, Professional Sound Systems, Wireless Microphones, Lighting Systems</p>
         </div>
         
-        <p style="font-size: 1.2rem; margin-top: 2rem;">
-          <strong>The Brain AV Difference:</strong> I don't just offer services—I bring decades of understanding what makes experiences memorable. Whether it's keeping a dance floor packed, building a website that converts visitors to customers, or producing video content that tells your story, I combine technical expertise with creative intuition that only comes from years of live performance experience.
-        </p>
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎵</div>
+          <h4>Music Production</h4>
+          <p>Ableton Live, Resolume Arena, Professional Audio Interfaces, Studio Monitors</p>
+        </div>
+        
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📹</div>
+          <h4>Video Production</h4>
+          <p>ATEM Mini Pro, 1080p Cameras, 4K Drone (Potensic), Streaming Encoder, Professional Lighting</p>
+        </div>
+        
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
+          <h4>Web Development</h4>
+          <p>Modern Frameworks, AI-Enhanced Tools, Responsive Design, Cloud Hosting</p>
+        </div>
+        
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+          <h4>AI Tools</h4>
+          <p>Advanced AI for Development, Content Creation, Design Enhancement</p>
+        </div>
+        
+        <div class="tech-item">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+          <h4>Creative Software</h4>
+          <p>Graphic Design, Video Editing, Motion Graphics, Digital Asset Creation</p>
+        </div>
       </div>
     </section>
 
@@ -1134,52 +1227,6 @@
           <h3>Remote Services</h3>
           <p><strong>Anywhere</strong><br>
           Web development, graphic design, and music production available remotely worldwide.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technology Stack -->
-    <section id="tech">
-      <h2>Technology & Tools</h2>
-      <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #555;">
-        Professional-grade equipment and software for every service
-      </p>
-      
-      <div class="tech-stack">
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🎧</div>
-          <h4>DJ Equipment</h4>
-          <p>Serato DJ Pro, Professional Sound Systems, Wireless Microphones, Lighting Systems</p>
-        </div>
-        
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🎵</div>
-          <h4>Music Production</h4>
-          <p>Ableton Live, Resolume Arena, Professional Audio Interfaces, Studio Monitors</p>
-        </div>
-        
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">📹</div>
-          <h4>Video Production</h4>
-          <p>ATEM Mini Pro, 1080p Cameras, 4K Drone (Potensic), Streaming Encoder, Professional Lighting</p>
-        </div>
-        
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
-          <h4>Web Development</h4>
-          <p>Modern Frameworks, AI-Enhanced Tools, Responsive Design, Cloud Hosting</p>
-        </div>
-        
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
-          <h4>AI Tools</h4>
-          <p>Advanced AI for Development, Content Creation, Design Enhancement</p>
-        </div>
-        
-        <div class="tech-item">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
-          <h4>Creative Software</h4>
-          <p>Graphic Design, Video Editing, Motion Graphics, Digital Asset Creation</p>
         </div>
       </div>
     </section>
@@ -1294,10 +1341,32 @@
             <li><a href="#web-dev">Web Development</a></li>
             <li><a href="#video">Video Production</a></li>
             <li><a href="#music">Music Production</a></li>
-            <li>Graphic Design</li>
-            <li>Live Streaming</li>
-            <li>Event Planning</li>
+            <li><a href="#services">Graphic Design</a></li>
+            <li><a href="#video">Live Streaming</a></li>
           </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+1-705-213-3456">📞 Phone: (705) 213-3456</a></li>
+            <li><a href="https://brainav.ca">🌐 Website: BrainAV.ca</a></li>
+            <li><a href="https://musicproducer.jasonbrain.com" target="_blank" rel="noopener">🎵 Music Studio</a></li>
+            <li>⏱️ Response: Within 1 Business Day</li>
+          </ul>
+
+          <h4 style="margin-top: 1.5rem; font-size: 1.1rem;">Connect with Jason Brain</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jason-brain/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a href="https://x.com/JasonBra1n" target="_blank" rel="noopener" title="X">X</a>
+            <a href="https://www.tiktok.com/@jason.bra1n" target="_blank" rel="noopener" title="TikTok">tk</a>
+          </div>
+
+          <h4 style="margin-top: 1.5rem; font-size: 1.1rem;">BrainAV Projects</h4>
+          <div class="social-links">
+            <a href="https://github.com/BrainAV/" target="_blank" rel="noopener" title="GitHub">gh</a>
+            <a href="https://www.printables.com/@brainav" target="_blank" rel="noopener" title="Printables">pr</a>
+          </div>
         </div>
         
         <div class="footer-section">
@@ -1305,21 +1374,10 @@
           <ul>
             <li>Haliburton (Home Base)</li>
             <li>Kawartha Lakes & Lindsay</li>
-            <li>Minden Hills</li>
             <li>Peterborough</li>
             <li>Durham Region</li>
             <li>Toronto & GTA</li>
             <li>Remote Services Worldwide</li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+1-705-213-3456">Phone: (705) 213-3456</a></li>
-            <li><a href="https://brainav.ca">Website: BrainAV.ca</a></li>
-            <li><a href="https://musicproducer.jasonbrain.com">Music Studio</a></li>
-            <li>Response: Within 1 Business Day</li>
           </ul>
         </div>
       </div>
@@ -1335,8 +1393,8 @@
         </p>
         <p style="margin-top: 1.5rem;">
           <a href="#top">Back to Top</a> | 
-          <a href="https://weddingdiscjockey.ca">Wedding DJ Network</a> | 
-          <a href="https://torontodiscjockey.ca">Toronto DJ Services</a>
+          <a href="https://weddingdiscjockey.ca" target="_blank" rel="noopener">Wedding DJ Network</a> | 
+          <a href="https://torontodiscjockey.ca" target="_blank" rel="noopener">Toronto DJ Services</a>
         </p>
       </div>
     </div>
