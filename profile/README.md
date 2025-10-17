@@ -1,23 +1,25 @@
-# BrainAV.ca - Web Development, Programming & Creative Tech
+# BrainAV.ca - Professional DJ Services & Creative Technology
 
-Welcome to the official GitHub organization for **BrainAV.ca**, where creativity meets cutting-edge technology. We specialize in **web development, full-stack programming, audio/video production, and AI-driven solutions** that bring your digital vision to life.
+Welcome to the official GitHub organization for **BrainAV.ca**, where professional entertainment meets cutting-edge technology. With **25+ years of experience**, we deliver exceptional DJ services alongside comprehensive creative and technical solutions including **web development, video production, music production, and AI-driven innovations**.
 
 ## About BrainAV.ca
 
-BrainAV.ca is a technology-focused organization dedicated to building innovative digital experiences and creative solutions. With expertise spanning web development, software engineering, multimedia production, and artificial intelligence, we transform ideas into powerful, scalable applications and content.
+BrainAV.ca is your premier destination for both professional entertainment and digital innovation. Whether you need a dynamic DJ for your next event or custom tech solutions to bring your creative vision to life, we combine entertainment expertise with modern technology, web development, multimedia production, and AI integration.
 
 ### What We Do
+- **Professional DJ & MC Services**: Live entertainment for weddings, corporate events, and special occasions across Central Ontario
 - **Web Development**: Modern, responsive web applications built with current best practices and frameworks
-- **Full-Stack Programming**: End-to-end software solutions from backend systems to interactive frontends
-- **Audio & Video Production**: Professional-grade media creation, processing, and optimization
-- **AI Integration**: Leveraging machine learning and AI models to enhance applications and workflows
-- **Creative Technology**: Combining design, code, and multimedia for unique digital experiences
+- **Video Production**: Professional-grade video creation, editing, and post-production
+- **Music Production**: High-quality audio production, mixing, and creative sound design
+- **Creative Services**: Comprehensive multimedia solutions combining design, code, and entertainment
+- **AI Integration**: Leveraging machine learning and AI models to enhance applications and creative workflows
 
 ## Technical Focus Areas
 
 - **Frontend Development**: React, Vue, modern JavaScript/TypeScript, responsive design
 - **Backend Development**: Node.js, Python, databases, APIs, cloud architecture
-- **Audio/Video**: Processing, streaming, encoding, real-time media solutions
+- **Video Production**: Filming, editing, color grading, visual effects, and post-production
+- **Music & Audio Production**: Mixing, mastering, sound design, and music composition
 - **AI & Machine Learning**: Model integration, NLP, generative AI applications
 - **DevOps & Infrastructure**: Deployment pipelines, containerization, cloud services
 - **Full-Stack Applications**: End-to-end development from concept to production
@@ -29,11 +31,12 @@ This organization hosts a collection of projects showcasing our capabilities in 
 ## Services & Collaboration
 
 We're available for:
+- **DJ & Entertainment Services**: Professional DJing, MC services, karaoke, special effects, and lighting for weddings, corporate events, and special occasions
 - **Custom Web Application Development**: Tailored solutions for your business or creative needs
-- **AI Integration Consulting**: Bringing intelligent features to existing projects
-- **Audio/Video Processing Solutions**: Professional media workflows and automation
-- **Full-Stack Development Services**: From MVP to enterprise-scale applications
-- **Technical Consulting**: Strategy and architecture planning for digital projects
+- **Video Production Services**: Concept to final delivery for commercials, content, and multimedia projects
+- **Music Production & Audio Services**: Original composition, mixing, mastering, and sound design
+- **Creative Technology Solutions**: Integrating AI, web tech, and multimedia for unique experiences
+- **Technical Consulting**: Strategy and architecture planning for digital and creative projects
 
 ## Get In Touch
 
@@ -51,4 +54,4 @@ This organization maintains open-source projects and portfolio work. For commerc
 
 ---
 
-**BrainAV.ca - Innovating at the Intersection of Code, Creativity, and AI**
+**BrainAV.ca - Professional Entertainment & Creative Technology Innovation**
