@@ -97,10 +97,6 @@
     .hamburger.toggle .bar2 { opacity: 0; }
     .hamburger.toggle .bar3 { transform: rotate(45deg) translate(-6px, -6px); }
 
-    .nav-links.nav-active {
-      transform: translateX(0%);
-    }
-
     /* Header Hero */
     header { 
       position: relative;
@@ -709,7 +705,26 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .nav-links { display: none; }
+      .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background: var(--dark-bg);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        font-size: 1.5rem;
+      }
+
+      .nav-links.nav-active {
+        transform: translateX(0%);
+      }
+
       .hamburger { display: flex; }
       
       header h1 { font-size: 2.5rem; }
