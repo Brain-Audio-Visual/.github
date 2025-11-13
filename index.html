@@ -92,6 +92,14 @@
       transition: 0.3s;
       border-radius: 2px;
     }
+    
+    .hamburger.toggle .bar1 { transform: rotate(-45deg) translate(-6px, 6px); }
+    .hamburger.toggle .bar2 { opacity: 0; }
+    .hamburger.toggle .bar3 { transform: rotate(45deg) translate(-6px, -6px); }
+
+    .nav-links.nav-active {
+      transform: translateX(0%);
+    }
 
     /* Header Hero */
     header { 
@@ -749,9 +757,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
       </div>
     </div>
   </nav>
@@ -1528,11 +1536,21 @@
 
     // Hamburger menu toggle (mobile)
     const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links li');
     
     hamburger.addEventListener('click', function() {
-      alert('Mobile menu coming soon! For now, please scroll to navigate or call (705) 213-3456');
+      navLinks.classList.toggle('nav-active');
+      hamburger.classList.toggle('toggle');
     });
 
+    // Close menu when a link is clicked
+    navLinks.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        navLinks.classList.remove('nav-active');
+        hamburger.classList.remove('toggle');
+      }
+    });
     // The form is now handled by Formspree.
   </script>
 </body>
