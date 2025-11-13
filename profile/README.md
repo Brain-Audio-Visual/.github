@@ -1,50 +1,57 @@
-# BrainAV.ca - Professional DJ & Entertainment Services
+# BrainAV.ca - Professional DJ Services & Creative Technology
 
-Welcome to the official GitHub organization for **BrainAV.ca**, the online home of Jason Brain's professional DJ and entertainment services. With over **25 years of experience**, Jason Brain delivers unforgettable events across **Central Ontario**, specializing in weddings, corporate events, and special occasions.
+Welcome to the official GitHub organization for **BrainAV.ca**, where professional entertainment meets cutting-edge technology. With **25+ years of experience**, we deliver exceptional DJ services alongside comprehensive creative and technical solutions including **web development, video production, music production, and AI-driven innovations**.
 
 ## About BrainAV.ca
 
-BrainAV.ca is your premier choice for professional DJ and entertainment services in **Toronto (GTA), Durham Region, Kawartha Lakes, Peterborough, Haliburton**, and surrounding Central Ontario areas. Jason Brain, a recognized member of the **Canadian Disc Jockey Association (CDJA)**, brings expertise, professionalism, and energy to every event, ensuring a tailored experience that keeps the dance floor packed.
+BrainAV.ca is your premier destination for both professional entertainment and digital innovation. Whether you need a dynamic DJ for your next event or custom tech solutions to bring your creative vision to life, we combine entertainment expertise with modern technology, web development, multimedia production, and AI integration.
 
-### Why Choose BrainAV?
-- **25+ Years of Experience**: Over 1,000 events performed with a 5-star reputation.
-- **Comprehensive Services**: Wedding DJ, MC services, karaoke, special effects, lighting, and photo booth options.
-- **Professional Credentials**: Licensed music, full liability insurance, and police background checks available.
-- **Trusted by Clients**: Referred by previous customers, banquet halls, and event guests for outstanding service and reasonable pricing.
+### What We Do
+- **Professional DJ & MC Services**: Live entertainment for weddings, corporate events, and special occasions across Central Ontario
+- **Web Development**: Modern, responsive web applications built with current best practices and frameworks
+- **Video Production**: Professional-grade video creation, editing, and post-production
+- **Music Production**: High-quality audio production, mixing, and creative sound design
+- **Creative Services**: Comprehensive multimedia solutions combining design, code, and entertainment
+- **AI Integration**: Leveraging machine learning and AI models to enhance applications and creative workflows
 
-## Services Offered
+## Technical Focus Areas
 
-- **Wedding DJ & MC Services**: Create the perfect atmosphere for your ceremony and reception.
-- **Corporate Events**: Professional entertainment for business functions and galas.
-- **Karaoke & Music Video Road Shows**: Engage guests with interactive entertainment.
-- **Special Effects & Lighting**: Elevate your event with stunning visuals and ambiance.
-- **Photo Booth Services**: Capture memories with fun, high-quality photo experiences.
-- **Event Planning Consultation**: Personalized support to bring your vision to life.
+- **Frontend Development**: React, Vue, modern JavaScript/TypeScript, responsive design
+- **Backend Development**: Node.js, Python, databases, APIs, cloud architecture
+- **Video Production**: Filming, editing, color grading, visual effects, and post-production
+- **Music & Audio Production**: Mixing, mastering, sound design, and music composition
+- **AI & Machine Learning**: Model integration, NLP, generative AI applications
+- **DevOps & Infrastructure**: Deployment pipelines, containerization, cloud services
+- **Full-Stack Applications**: End-to-end development from concept to production
 
-## Coverage Areas
+## Our Projects
 
-BrainAV.ca proudly serves **Central Ontario**, including:
-- **Toronto & GTA**: Downtown to suburban venues.
-- **Durham Region**: Oshawa, Whitby, Ajax, Pickering, and more.
-- **Kawartha Lakes**: Perfect for lakeside weddings and events.
-- **Peterborough**: University events, weddings, and community functions.
-- **Haliburton**: Stunning highland and cottage venues.
-- **Surrounding Areas**: Flexible travel for your special occasion.
+This organization hosts a collection of projects showcasing our capabilities in web development, creative coding, multimedia solutions, and AI-enhanced applications. Check out our repositories to see what we're building.
 
-## Contact Jason Brain
+## Services & Collaboration
 
-Ready to book an unforgettable event? Reach out to Jason Brain for a free consultation and quote:
-- **Phone**: [(705) 701-9776](tel:+1-705-701-9776)
+We're available for:
+- **DJ & Entertainment Services**: Professional DJing, MC services, karaoke, special effects, and lighting for weddings, corporate events, and special occasions
+- **Custom Web Application Development**: Tailored solutions for your business or creative needs
+- **Video Production Services**: Concept to final delivery for commercials, content, and multimedia projects
+- **Music Production & Audio Services**: Original composition, mixing, mastering, and sound design
+- **Creative Technology Solutions**: Integrating AI, web tech, and multimedia for unique experiences
+- **Technical Consulting**: Strategy and architecture planning for digital and creative projects
+
+## Get In Touch
+
+Interested in working together or learning more about our capabilities?
+
+- **Phone**: [(705) 213-3456](tel:+1-705-213-3456)
 - **Website**: [BrainAV.ca](https://brainav.ca)
 - **Response Time**: Within 1 business day
 
 ## License
 
-&copy; 2025 BrainAV.ca | All Rights Reserved
+© 2025 BrainAV.ca | All Rights Reserved
 
-This project is maintained for the BrainAV.ca website. For professional DJ inquiries, please use the contact form on the website or email directly.
+This organization maintains open-source projects and portfolio work. For commercial inquiries, partnerships, or custom development, please reach out through our contact channels.
 
 ---
 
-**BrainAV.ca - Central Ontario's Premier DJ Service**  
-Serving Toronto, GTA, Durham Region, Kawartha Lakes, Peterborough, Haliburton, and beyond with 25+ years of excellence.
+**BrainAV.ca - Professional Entertainment & Creative Technology Innovation**
